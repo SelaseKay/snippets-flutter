@@ -30,6 +30,10 @@ android {
     namespace = "com.example.firebase_snippets_app"
     compileSdkVersion flutter.compileSdkVersion
 
+    buildFeatures {
+        buildConfig true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -50,10 +54,6 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-    }
-
-    buildFeatures {
-        buildConfig true
     }
 
     buildTypes {
